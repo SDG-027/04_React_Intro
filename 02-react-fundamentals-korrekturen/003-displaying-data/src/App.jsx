@@ -1,6 +1,8 @@
+import Student from "./components/Student.jsx";
+
 const studentData = {
   id: 1,
-  vorname: "Testy",
+  firstName: "Testy",
   lastName: "McTest",
   age: 42,
   course: "Web Development",
@@ -9,7 +11,11 @@ const studentData = {
 };
 
 function App() {
-  return <>3</>;
+  return (
+    <>
+      <Student person={studentData} />
+    </>
+  );
 }
 
 export default App;

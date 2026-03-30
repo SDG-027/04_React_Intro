@@ -1,19 +1,22 @@
 import Student from "./components/Student.jsx";
 
 const studentData = {
-  id: 1,
-  vorname: "Test",
+  firstName: "Testy",
   lastName: "McTest",
-  age: 1,
+  age: 42,
   course: "Web Development",
   city: "Berlin",
-  gpa: 95,
-  graduate: false,
   picture: "https://randomuser.me/api/portraits/men/1.jpg",
+  gpa: 94,
+  graduate: true,
 };
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Student person={studentData} />
+    </>
+  );
 }
 
 export default App;
