@@ -1,6 +1,7 @@
-const LightBulb = () => {
+const LightBulb = ({ lightSwitch }) => {
   return (
-    <div className={`container`}>
+    // CSS-Klasse dynamisch einfügen mittels State
+    <div className={`container ${lightSwitch ? 'night' : ''}`}>
       <div className="bulb-light">
         <div id="light" />
         <div id="bulb">
